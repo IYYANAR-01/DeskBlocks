@@ -3,7 +3,7 @@
     "en"
   ],
   "service": "DESK",
-  "storage": false,
+  "storage": true,
   "type": "personal",
   "whiteListedDomains": [],
   "modules": {
@@ -16,7 +16,7 @@
         "icon": "/assets/logo.png"
       },
       {
-        "location": "desk.extension.preference",
+        "location": "desk.ticket.detail.rightpanel",
         "url": "/widget2.html",
         "name": "Preference",
         "logo": "/assets/logo.png",

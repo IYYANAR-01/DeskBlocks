@@ -1,15 +1,11 @@
 <script lang="ts">
-    import { onMount, setContext } from "svelte";
-    import { Button } from "deskblocks";
+    import { onMount } from "svelte";
     import { initApp } from "../lib/util";
     import CheckListForm from "../containers/CheckListForm/CheckListForm.svelte";
     import commonStyle from '../common/common.module.css';
 
-    let App;
-    setContext("App", App);
-
     onMount(async() => {
-        App = await initApp();
+        await initApp();
     });
 </script>
 
@@ -19,6 +15,6 @@
 
 <style>
     :global(#app){
-        height: 100%;
+        height: 100vh;
     }
 </style>

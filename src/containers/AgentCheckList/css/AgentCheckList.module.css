@@ -1,0 +1,9 @@
+.header {
+    height: 42px;
+    border-bottom: 1px solid var(--db-color-border);
+    padding: 0 15px;
+}
+
+.content {
+    padding: 10px 15px;
+}

@@ -1,18 +1,13 @@
 <script lang="ts">
-    import { onMount, setContext } from "svelte";
-    import { Button } from "deskblocks";
+    import { onMount } from "svelte";
     import { initApp } from "../lib/util";
-
-    let App;
-    setContext("App", App);
+    import AgentCheckList from "../containers/AgentCheckList/AgentCheckList.svelte";
 
     onMount(async () => {
-        App = await initApp();
+        await initApp();
     });
 </script>
 
 <main>
-    <h1>UserPreference</h1>
-    <Button>Save</Button>
-    <Button variant="secondary">Cancel</Button>
+    <AgentCheckList/>
 </main>
